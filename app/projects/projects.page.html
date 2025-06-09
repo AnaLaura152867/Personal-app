@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Projetos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item button (click)="abrirModal(
+      'MEU APP',
+      'Este projeto foi desenvolvido com o objetivo de aprender mobile.',
+      'https://github.com/AnaLaura152867/meuapp.git')">
+      MEU APP 
+    </ion-item>
+    <ion-item button (click)="abrirModal(
+      'Sonho mágico',
+      'Este projeto foi desenvolvido para treino de html e php',
+      'https://github.com/AnaLaura152867/trabalho1905.git')">
+      Sonho Mágico
+    </ion-item>
+    <ion-item button (click)="abrirModal(
+      'Trabalho 1905',
+      'O projeto abaixo foi desenvolvido em aula paga entrega.',
+      'https://github.com/AnaLaura152867/trabalho1905.git')">
+      Trabalho 1905
+    </ion-item>
+  </ion-list>
+</ion-content>
